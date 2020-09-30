@@ -1,83 +1,80 @@
 <template>
-    <div class="box-login">
-    <el-form class="portal-form" :rules="rules" :model="form" ref="elForm">
-      <el-form-item prop="userName">
-        <el-input placeholder="请输入您的用户名/手机号" v-model="form.userName"/>
-      </el-form-item>
-      <el-form-item prop="password">
-        <el-input
-          type="password"
-          placeholder="请输入您的用户密码"
-          v-on:keyup.enter.native="onLogin"
-          v-model="form.password"
-        />
-      </el-form-item>
-    </el-form>
-    <div class="footer-pc">
-      <div class="btn-box">
-        <el-button type="primary" class="btn-ok" @click="onLogin">登录</el-button>
-      </div>
-    </div>
+    <div class="login-container">
+       <el-card class="login-card">
+         <el-tabs class="login-tab" v-model="activeName" >
+            <el-tab-pane name="pwd">
+              <span slot="label" style="display:block" v-html="title"></span>
+              <form-login @onLoading="showLoading" @unLoading="hideLoading"> </form-login>
+            </el-tab-pane>
+            <el-tab-pane name="code">
+              <span slot="label" style="display:block" v-html="titleCode"></span>
+              <form-login @onLoading="showLoading" @unLoading="hideLoading"> </form-login>
+            </el-tab-pane>
+         </el-tabs>
+      </el-card>
 
-    <div class="footer-mobile">
-      <div class="btn-box">
-        <el-button type="primary" class="btn-ok" @click="onLogin">登录</el-button>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
-import loginMixin from './loginMixin'
+import formLogin from './form-login'
 export default {
-  mixins: [loginMixin],
+  components: { formLogin },
   data() {
     return {
-      form: {
-        password: '',
-        userName: ''
-      },
-      rules: {
-        password: {
-          required: true,
-          message: '请输入您的用户密码'
-        },
-        userName: {
-          required: true,
-          message: '请输入您的用户名/手机号'
-        }
-      }
+      title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账号密码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+      titleCode: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'
     }
   },
-   methods: {
-    onLogin() {
-      this.$refs.elForm.validate(valid => {
-        if (!valid) {
-          return
-        }
-        this.login(this.form)
-      })
+
+  methods: {
+    showLoading() {
+      this.loading = true
+    },
+    hideLoading() {
+      this.loading = false
     }
   }
 }
 </script>
 
-<style  scoped>
-/* .box-login {
-  .footer-mobile {
-    .btn-other {
-      display: flex;
-      align-items: center;
-      a {
-        flex: 1;
+<style lang='less' scoped>
+@r: 37.5rem;
+@s: 7.5%;
+
+@media screen and (min-width: 771px) {
+   .login-container {
+      display: inline-block;
+      width: 400px;
+      height: 500px;
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      margin-left: -200px;
+      font-family: MicrosoftYaHei;
+      font-weight: 400;
+      z-index: 100000;
+      .login-card {
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1) !important;
+        border-radius: 10px;
+        animation: fade-in-up 0.5s 0.2s ease both;
+        -webkit-animation: fade-in-up 0.5s 0.2s ease both;
+        -moz-animation: fade-in-up 0.5s 0.2s ease both;
+        -ms-animation: fade-in-up 0.5s 0.2s ease both;
+        .el-tabs__nav {
+          widows: 100% !important;
+        }
       }
-      a:first-child {
-        text-align: left;
-      }
-      a:last-child {
-        text-align: right;
-      }
+      
     }
-  }
-} */
+}
+
+
 </style>
+
+
+
