@@ -22,8 +22,8 @@ export default {
   components: { formLogin },
   data() {
     return {
-      title: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;账号密码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
-      titleCode: '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;验证码登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+      title: '账号密码登录',
+      titleCode: '验证码登录',
       activeName: 'pwd'
     }
   },

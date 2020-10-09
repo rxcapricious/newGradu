@@ -11,9 +11,17 @@ export default new Router({
     },
     {
       path: '/login',
-      component: page.log.login,
+      component: page.login.index,
       meta: {
         title: '登录首页'
+      }
+    },
+    {
+      path: '/entrance',
+      name: 'entrance',
+      component: page.entrance.index,
+      meta: {
+        title: '首页入口'
       }
     }
   ]

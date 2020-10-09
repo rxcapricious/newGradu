@@ -3,7 +3,10 @@
  */
 
  export default {
-     log: {
-         login: () => import('../../view/dev-login/login.vue'),
+     login: {
+         index: () => import('@/view/dev-login/login.vue'),
+     },
+     entrance: {
+         index: () => import('@/view/entrance.vue')
      }
  }
