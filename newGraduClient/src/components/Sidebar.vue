@@ -9,7 +9,7 @@
                 <i class="icon icon-zhuye"></i>
                 <span>后台主页</span>
             </el-menu-item>
-             <el-menu-item index="/dashboard/order">
+             <el-menu-item index="/entrance/order">
                 <i class="icon icon-icon"></i>
                 <span>订单列表</span>
             </el-menu-item>
@@ -18,17 +18,17 @@
                     <i class="icon icon-shangpin"></i>
                     <span>商品管理</span>
                 </template>
-                <el-menu-item index="/dashboard/goods">
+                <el-menu-item index="/entrance/goods">
                     <i class="icon icon-dian"></i>
                     <span>商品列表</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/nature">
+                <el-menu-item index="/entrance/nature">
                     <i class="icon icon-dian"></i>
                     <span>商品设置</span>
                 </el-menu-item>
             </el-submenu>
 
-            <el-menu-item index="/dashboard/user">
+            <el-menu-item index="/entrance/user">
                 <i class="icon icon-yonghu"></i>
                 <span>用户列表</span>
             </el-menu-item>
@@ -37,33 +37,33 @@
                     <i class="icon icon-dianpu-copy"></i>
                     <span>店铺设置</span>
                 </template>
-                <el-menu-item index="/dashboard/settings/showset">
+                <el-menu-item index="/entrance/settings/showset">
                     <i class="icon icon-dian"></i>
                     <span>显示设置</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/ad">
+                <el-menu-item index="/entrance/ad">
                     <i class="icon icon-dian"></i>
                     <span>广告列表</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/notice">
+                <el-menu-item index="/entrance/notice">
                     <i class="icon icon-dian"></i>
                     <span>公告管理</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/freight">
+                <el-menu-item index="/entrance/freight">
                     <i class="icon icon-dian"></i>
                     <span>运费模板</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/shipper">
+                <el-menu-item index="/entrance/shipper">
                     <i class="icon icon-dian"></i>
                     <span>快递设置</span>
                 </el-menu-item>
-                <el-menu-item index="/dashboard/admin">
+                <el-menu-item index="/entrance/admin">
                     <i class="icon icon-dian"></i>
                     <span>管理员</span>
                 </el-menu-item>
             </el-submenu>
 
-             <el-menu-item index="/dashboard/shopcart">
+             <el-menu-item index="/entrance/shopcart">
                 <i class="icon icon-gouwu"></i>
                 <span>购物车</span>
             </el-menu-item>
@@ -81,7 +81,7 @@
     export default {
         data() {
             return {
-                currentPagePath: '/dashboard',
+                currentPagePath: '/entrance',
                 loginInfo: null,
             }
         },

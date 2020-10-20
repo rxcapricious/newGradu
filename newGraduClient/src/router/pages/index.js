@@ -8,6 +8,7 @@
      },
      entrance: {
          index: () => import('@/view/entrance.vue'),
-         welcome: ()=> import('@/view/welcome.vue')
+         welcome: ()=> import('@/view/welcome.vue'),
+         order: ()=> import('@/view/Order/OrderPage.vue')
      }
  }

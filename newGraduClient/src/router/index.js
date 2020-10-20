@@ -28,6 +28,11 @@ export default new Router({
           path: 'welcome',
           name: 'welcome',
           component: page.entrance.welcome
+        },
+        {
+          path: 'order',
+          name: 'order',
+          component: page.entrance.order
         }
       ]
     }
