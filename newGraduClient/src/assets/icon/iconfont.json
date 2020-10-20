@@ -6,25 +6,46 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1164943",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "356464",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "725731",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "739112",
+      "name": "购物",
+      "font_class": "gouwu",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "4529176",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
       "icon_id": "538884",
       "name": "退出",
       "font_class": "tuichu",
       "unicode": "e622",
       "unicode_decimal": 58914
-    },
-    {
-      "icon_id": "5030",
-      "name": "购物车满",
-      "font_class": "gouwucheman",
-      "unicode": "e600",
-      "unicode_decimal": 58880
-    },
-    {
-      "icon_id": "521065",
-      "name": "用户",
-      "font_class": "1",
-      "unicode": "e621",
-      "unicode_decimal": 58913
     },
     {
       "icon_id": "791883",
@@ -39,20 +60,6 @@
       "font_class": "icon",
       "unicode": "e611",
       "unicode_decimal": 58897
-    },
-    {
-      "icon_id": "11759951",
-      "name": "主页",
-      "font_class": "zhuye",
-      "unicode": "e7bb",
-      "unicode_decimal": 59323
-    },
-    {
-      "icon_id": "12184868",
-      "name": "商品",
-      "font_class": "shangpin",
-      "unicode": "e683",
-      "unicode_decimal": 59011
     }
   ]
 }

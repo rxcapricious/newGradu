@@ -7,6 +7,7 @@
          index: () => import('@/view/dev-login/login.vue'),
      },
      entrance: {
-         index: () => import('@/view/entrance.vue')
+         index: () => import('@/view/entrance.vue'),
+         welcome: ()=> import('@/view/welcome.vue')
      }
  }

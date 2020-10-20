@@ -41,6 +41,7 @@ export default {
         padding: 20px 20px 20px 220px;
         min-height: 700px;
         overflow: auto;
+        background-color: #f5f7f9;
     }
 
     .footer {

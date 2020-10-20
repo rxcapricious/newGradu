@@ -22,7 +22,14 @@ export default new Router({
       component: page.entrance.index,
       meta: {
         title: '首页入口'
-      }
+      },
+      children: [
+        {
+          path: 'welcome',
+          name: 'welcome',
+          component: page.entrance.welcome
+        }
+      ]
     }
   ]
 })
