@@ -96,6 +96,7 @@ export default {
     data() {
         return {
             activeName: 'first',
+            loading: false,
             tableData: [
                 {
                     actual_price:0.01,
@@ -154,8 +155,8 @@ export default {
         orderEdit() {
 
         },
-        viewDetail() {
-
+        viewDetail(index) {
+            this.$router.push({path: '/entrance/order/detail', query: {id: index}})
         },
         listOrders() {
             this.loading = true;
@@ -168,7 +169,7 @@ export default {
             }
 
             // 调用接口获取订单数据，根据不同的params参数
-            
+
         }
     }
 }

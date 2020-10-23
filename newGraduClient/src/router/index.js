@@ -26,13 +26,18 @@ export default new Router({
       children: [
         {
           path: 'welcome',
-          name: 'welcome',
+          name: '主页',
           component: page.entrance.welcome
         },
         {
           path: 'order',
-          name: 'order',
-          component: page.entrance.order
+          name: '订单',
+          component: page.entrance.order.index
+        },
+        {
+          path: 'order/detail',
+          name: '订单详情',
+          component: page.entrance.order.detail
         }
       ]
     }

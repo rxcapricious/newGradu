@@ -9,6 +9,10 @@
      entrance: {
          index: () => import('@/view/entrance.vue'),
          welcome: ()=> import('@/view/welcome.vue'),
-         order: ()=> import('@/view/Order/OrderPage.vue')
+         order: {
+            index: ()=> import('@/view/Order/OrderPage.vue'),
+            detail: ()=> import('@/view/Order/OrderdetailPage.vue')
+         },
+         
      }
  }
